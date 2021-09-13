@@ -24,10 +24,10 @@ const showProducts = (products) => {
      <h2>Price: $ ${product.price}</h2>
      <div class="d-flex justify-content-around mx-5 ">
      <p class="fw-bolder">Total Ratings: ${product.rating.count}</p>
-     <p class="fw-bolder text-success">Rate: ${product.rating.rate}</p>
+     <p class="fw-bolder"><span class="text-success">Rate</span>: ${product.rating.rate}</p>
     </div>
-     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success mx-4">add to cart</button>
-     <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="productDetails(${ID})" id="details-btn" class="btn btn-danger">Details</button>
+     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success mx-4 p-3 rounded-pill">Add to cart</button>
+     <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="productDetails(${ID})" id="details-btn" class="btn btn-danger p-3 rounded-pill">Details</button>
     </div>
 
      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
